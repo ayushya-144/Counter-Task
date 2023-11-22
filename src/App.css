@@ -1,3 +1,6 @@
+*{
+  transition: all 0.1s ease-in-out;
+}
 .App {
   text-align: center;
 }
@@ -13,15 +16,59 @@
   }
 }
 
-.App-header {
+.counterInput{
+  padding: 0.5%;
+  font-size:xx-large;
+  box-sizing: border-box;
+  margin: 0 2% 0%;
+  border-radius: 10px;
+  border: none;
+}
+
+.counterInput:hover,.counterInput:focus{
   background-color: #282c34;
-  min-height: 100vh;
+  color: #fff;
+  outline: 4px solid white;
+}
+
+.appButton{
+  padding: 0.5%;
+  font-size:xx-large;
+  width: 4%;
+  margin: 0 2%;
+  border-radius: 10px;
+  border: none;
+}
+
+.appButton:hover{
+  outline: 4px solid #fff;
+  background-color: #282c34;
+  color: #fff;
+  cursor: pointer;
+}
+
+div > .appHeading{
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+.appHeader {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 2%;
+}
+
+.appMain{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #282c34;
+  min-height: 100vh;
 }
 
 .App-link {
