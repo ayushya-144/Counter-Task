@@ -25,6 +25,11 @@
   border: none;
 }
 
+.counterInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .counterInput:hover,.counterInput:focus{
   background-color: #282c34;
   color: #fff;
@@ -35,7 +40,6 @@
   padding: 0.5%;
   font-size:xx-large;
   width: 4%;
-  margin: 0 2%;
   border-radius: 10px;
   border: none;
 }
@@ -47,10 +51,10 @@
   cursor: pointer;
 }
 
-div > .appHeading{
+.appHeading{
   text-align: center;
   color: #fff;
-  margin: 0;
+  margin: 0 2%;
 }
 
 .appHeader {
